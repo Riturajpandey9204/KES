@@ -1,0 +1,18 @@
+server:
+  port: 8090
+
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    username: system
+    password: sia
+    
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true   
+reg-app:
+  messages:
+    SUCCESS: "Your account has been created successfully!!!!!"
+    FAIL: "Your account has not created !!!!!"
