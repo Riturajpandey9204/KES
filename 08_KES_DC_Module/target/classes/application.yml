@@ -1,0 +1,19 @@
+server:
+  port: 8097
+
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    username: system
+    password: sia
+    
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true   
+reg-app:
+  messages:
+    success: YOUR DETAILS ARE SUCCESSFULLY REGISTERED WITH KES...!!
+    fail: YOU ARE NOT BELONGING TO KETUCKY STATE..!!
+    exits: YOUR DETAILS ARE ALREADY REGISTERED WITH KES ...!!
