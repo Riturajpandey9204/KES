@@ -1,0 +1,18 @@
+server:
+  port: 8096
+
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    username: system
+    password: sia
+    
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true   
+app-config:
+  messages:
+    success: YOU ARE ELIGIBLE FOR KES POLICIES..!!
+    fail: YOU ARE NOT ELIGIBLE FOR KES POLICIES..!!
