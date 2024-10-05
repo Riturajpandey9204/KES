@@ -1,0 +1,19 @@
+server:
+  port: 8093
+
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    username: system
+    password: sia
+    
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true   
+forgot-pwd-app:
+  messages:
+    noRecord: No record found with given emailId!!
+    success: Your password is 
+  
