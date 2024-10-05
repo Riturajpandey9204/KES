@@ -1,0 +1,19 @@
+server:
+  port: 8094
+
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    username: system
+    password: sia
+    
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true   
+updated-pwd-app:
+  messages:
+    noRecord: No record found with given emailId!!
+    success: Your password has been updated successfully!! and Your new Pwd is 
+    notMatched: Your New Password and Confirm pwd Did't matched
